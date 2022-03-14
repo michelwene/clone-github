@@ -19,7 +19,7 @@ html{
     color: var(--black);
 }
 
-ul{
+ul, li{
     list-style: none;
 }
 
