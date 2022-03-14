@@ -29,7 +29,7 @@ export const LeftSide = styled.div`
 
 export const RightSide = styled.div`
   padding: 0 var(--horizontalPadding);
-  
+
   @media (min-width: 768px) {
     width: 75%;
   }
@@ -54,4 +54,10 @@ export const Repos = styled.div`
       grid-auto-rows: minmax(min-content, max-content);
     }
   }
+`;
+
+export const CalendarHeading = styled.span`
+  font-size: 16px;
+  margin: 36px 0 9px;
+  display: inline-flex;
 `;

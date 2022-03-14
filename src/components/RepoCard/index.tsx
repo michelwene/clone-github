@@ -1,7 +1,14 @@
 import React from "react";
-import { Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import { Container, TopSide, BotSide, RepoIcon, StarIcon, ForkIcon  } from './styles';
+import {
+  Container,
+  TopSide,
+  BotSide,
+  RepoIcon,
+  StarIcon,
+  ForkIcon,
+} from "./styles";
 
 interface Props {
   username: string;
@@ -20,36 +27,35 @@ const RepoCard: React.FC<Props> = ({
   stars,
   forks,
 }) => {
-
-    const languageClass = language ? language.toLowerCase() : 'other';
+  const languageClass = language ? language.toLowerCase() : "other";
 
   return (
-      <Container>
+    <Container>
       <TopSide>
-<header>
-    <RepoIcon/>
-    <Link to={`/${username}/${reponame}`}>{reponame}<Link/>
-</header>
-<p>{description}</p>
+        <header>
+          <RepoIcon />
+          <Link to={`/${username}/${reponame}`}>{reponame}</Link>
+        </header>
+        <p>{description}</p>
       </TopSide>
       <BotSide>
-<ul>
-    <li>
-        <div className={`language ${languageClass}`}/>
-        <span>{language}</span>
-    </li>
-    <li>
-    <StarIcon/>
-    <span>{stars}</span>
-    </li>
-    <li>
-    <ForkIcon/>
-    <span>{forks}</span>
-    </li>
-</ul>
+        <ul>
+          <li>
+            <div className={`language ${languageClass}`} />
+            <span>{language}</span>
+          </li>
+          <li>
+            <StarIcon />
+            <span>{stars}</span>
+          </li>
+          <li>
+            <ForkIcon />
+            <span>{forks}</span>
+          </li>
+        </ul>
       </BotSide>
-  </Container>
-  
-  )};
+    </Container>
+  );
+};
 
 export default RepoCard;
