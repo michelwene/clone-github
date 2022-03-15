@@ -1,4 +1,4 @@
-# Frontend Mentor - Advice Generator
+# Github Clone
 
 Esta é uma solução para o [Github Clone](http://github.com). o objetivo foi criar um clone do app do github.
 
@@ -49,8 +49,7 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Solução URL: [https://github.com/michelwene/Advice-Generatorp](https://github.com/michelwene/Advice-Generator)
-- Site URL: [https://advice-generator-9qntgsq9w-michelwene.vercel.app/](https://advice-generator-9qntgsq9w-michelwene.vercel.app/)
+- Solução URL: [https://github.com/michelwene/clone-github](https://github.com/michelwene/clone-github)
 
 ## :page_with_curl: Meu processo
 
